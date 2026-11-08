@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex,nofollow">
+  <meta name="description" content="Hermes Drive は、運営者自身の Google Drive をローカルの Hermes Agent に接続するための個人用 OAuth アプリです。">
+  <title>Hermes Drive — 個人用Google Drive連携</title>
+  <style>
+    :root{color-scheme:light;--paper:#f6f4ee;--ink:#252d29;--muted:#58625b;--line:#cbd0c7;--accent:#355d49;--note:#e6eadd}
+    *{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font-family:"Hiragino Kaku Gothic ProN","Yu Gothic",Meiryo,sans-serif;font-size:16px;line-height:1.9}a{color:var(--accent);text-underline-offset:.22em}a:hover{text-decoration-thickness:2px}a:focus-visible{outline:3px solid var(--accent);outline-offset:5px}header,main,footer{max-width:960px;margin:auto;padding-right:28px;padding-left:28px}header{display:flex;justify-content:space-between;align-items:center;gap:24px;padding-top:22px;padding-bottom:22px;border-bottom:1px solid var(--line)}.wordmark{text-decoration:none;font-family:Georgia,"Hiragino Mincho ProN",serif;font-size:24px;color:var(--ink);white-space:nowrap}nav{display:flex;gap:24px;flex-wrap:wrap}nav a{display:inline-flex;align-items:center;min-height:44px;font-size:14px}main{padding-top:44px;padding-bottom:60px}.draft{display:inline-block;background:var(--note);padding:5px 12px;font-size:12px;letter-spacing:.04em}.intro{padding:35px 0 46px;border-bottom:1px solid var(--line)}.eyebrow{font-size:12px;letter-spacing:.16em;color:var(--muted);margin:0 0 18px}h1{font-family:"Hiragino Mincho ProN","Yu Mincho",Georgia,serif;font-size:clamp(30px,4.6vw,46px);font-weight:500;letter-spacing:-.02em;line-height:1.5;margin:0 0 22px}.lead{max-width:680px;font-size:17px;margin:0}.section{display:grid;grid-template-columns:180px minmax(0,1fr);gap:35px;padding:34px 0;border-bottom:1px solid var(--line)}h2{font-size:15px;margin:0;font-weight:600}.section p{margin:0 0 14px}.section p:last-child{margin-bottom:0}ul{margin:0;padding-left:1.25em}li+li{margin-top:8px}.small{font-size:13px;color:var(--muted)}.privacy-link{display:inline-flex;min-height:44px;align-items:center;font-weight:600;margin-top:13px}footer{display:flex;justify-content:space-between;gap:18px;flex-wrap:wrap;padding-top:24px;padding-bottom:32px;font-size:12px;color:var(--muted)}footer p{margin:0}@media(max-width:600px){header,main,footer{padding-right:22px;padding-left:22px}header{align-items:flex-start;flex-direction:column;gap:6px}nav{gap:20px}main{padding-top:30px}.section{grid-template-columns:1fr;gap:14px;padding:28px 0}.intro{padding-top:26px;padding-bottom:32px}}@media print{body{background:white;font-size:12pt}.draft{border:1px solid #777}a{color:inherit}main{padding-top:20px}}
+  </style>
+</head>
+<body>
+  <header>
+    <a class="wordmark" href="index.html" aria-label="Hermes Drive ホーム">Hermes Drive</a>
+    <nav aria-label="主なページ"><a href="index.html" aria-current="page">このアプリについて</a><a href="privacy.html">プライバシーポリシー</a><a href="index.html#terms">利用条件</a></nav>
+  </header>
+  <main id="main">
+    <span class="draft">個人用OAuthアプリ · 説明ページ</span>
+    <section class="intro" aria-labelledby="intro-heading">
+      <p class="eyebrow">PERSONAL GOOGLE DRIVE CONNECTION</p>
+      <h1 id="intro-heading">自分のDriveを、<br>必要なときだけ。</h1>
+      <p class="lead">Hermes Drive は、運営者自身の Google Drive を、ローカルで動く Hermes Agent に接続するための個人用 OAuth アプリです。</p>
+    </section>
+    <section class="section" aria-labelledby="purpose"><h2 id="purpose">できること</h2><div><ul><li>Drive内のファイルを検索し、情報や内容を取得する。</li><li>選んだファイルを実行端末へダウンロードする。</li><li>利用者が依頼した場合に、アップロードや編集などを行う。</li></ul><p class="small">Drive全体にアクセスできる権限を使いますが、全ファイルの自動同期は行いません。ファイルの変更・削除・共有設定の変更は、利用者が求めた場合に限ります。</p></div></section>
+    <section class="section" aria-labelledby="audience"><h2 id="audience">利用する人</h2><div><p>運営者本人の利用を目的としています。一般向けの利用登録やサービス提供は行っていません。</p><p>このWebサイトは説明用です。Googleへのログイン、Driveへの接続、ファイルのアップロードをこのサイト上で行うことはありません。</p></div></section>
+    <section class="section" aria-labelledby="data"><h2 id="data">データの扱い</h2><div><p>認証情報と取得したファイルは、Hermesを実行する端末側で管理します。検索結果や依頼に必要な内容は、設定されたAIサービスで処理される場合があります。取得したデータが常に端末内だけで完結する、という意味ではありません。</p><p>この説明サイトに、Driveのファイルや認証情報を掲載・保存することはありません。</p><a class="privacy-link" href="privacy.html">データの利用・保存・削除について読む →</a></div></section>
+    <section class="section" aria-labelledby="terms"><h2 id="terms">利用条件</h2><div><p>運営者本人が、自身のGoogleアカウントとデータを管理する目的で使用します。Googleおよび利用する外部サービスの規約・データ取扱条件に従い、第三者の権利を侵害する用途には使用しません。</p><p>重要な変更を依頼する前に内容を確認し、必要なバックアップを用意してください。継続提供や無停止動作を保証するものではありません。データの扱いは<a href="privacy.html">プライバシーポリシー</a>に記載します。</p></div></section>
+    <section class="section" aria-labelledby="operator"><h2 id="operator">運営者</h2><div><p><a href="https://github.com/tkys2019" rel="noopener noreferrer">tkys2019</a></p><p class="small">Hermes Agentを利用する独立した個人設定です。Google、Nous Research、Hermes Agent公式による提供・認定を示すものではありません。</p></div></section>
+  </main>
+  <footer><p>Hermes Drive · 個人用連携</p><a href="privacy.html">プライバシーポリシー</a></footer>
+</body>
+</html>

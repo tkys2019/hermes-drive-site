@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex,nofollow">
+  <meta name="description" content="個人用OAuthアプリ Hermes Drive におけるGoogle Driveデータの取得、利用、保存、外部処理、アクセスの解除について。">
+  <title>プライバシーポリシー — Hermes Drive</title>
+  <style>
+    :root{color-scheme:light;--paper:#f6f4ee;--ink:#252d29;--muted:#58625b;--line:#cbd0c7;--accent:#355d49;--note:#e6eadd}
+    *{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font-family:"Hiragino Kaku Gothic ProN","Yu Gothic",Meiryo,sans-serif;font-size:16px;line-height:1.95}a{color:var(--accent);text-underline-offset:.22em;overflow-wrap:anywhere}a:hover{text-decoration-thickness:2px}a:focus-visible{outline:3px solid var(--accent);outline-offset:5px}header,main,footer{max-width:960px;margin:auto;padding-right:28px;padding-left:28px}header{display:flex;justify-content:space-between;align-items:center;gap:24px;padding-top:22px;padding-bottom:22px;border-bottom:1px solid var(--line)}.wordmark{text-decoration:none;font-family:Georgia,"Hiragino Mincho ProN",serif;font-size:24px;color:var(--ink);white-space:nowrap}nav{display:flex;gap:24px;flex-wrap:wrap}nav a{display:inline-flex;align-items:center;min-height:44px;font-size:14px}main{padding-top:44px;padding-bottom:50px}.draft{display:inline-block;background:var(--note);padding:5px 12px;font-size:12px;letter-spacing:.04em}h1{font-family:"Hiragino Mincho ProN","Yu Mincho",Georgia,serif;font-size:clamp(28px,4vw,40px);line-height:1.5;font-weight:500;margin:27px 0 14px}.meta{font-size:13px;color:var(--muted);margin:0 0 27px}.summary{max-width:730px;margin-bottom:34px}section{padding:26px 0;border-top:1px solid var(--line);max-width:770px}h2{font-size:19px;margin:0 0 14px;font-weight:600}p{margin:0 0 14px}p:last-child{margin-bottom:0}ul{margin:0 0 15px;padding-left:1.3em}li+li{margin-top:8px}code{font-size:.87em;overflow-wrap:anywhere}.small{font-size:13px;color:var(--muted)}footer{display:flex;justify-content:space-between;gap:18px;flex-wrap:wrap;padding-top:24px;padding-bottom:32px;font-size:12px;color:var(--muted);border-top:1px solid var(--line)}footer p{margin:0}@media(max-width:600px){header,main,footer{padding-right:22px;padding-left:22px}header{align-items:flex-start;flex-direction:column;gap:6px}nav{gap:20px}main{padding-top:30px}h2{font-size:18px}}@media print{body{background:white;font-size:12pt}.draft{border:1px solid #777}a{color:inherit}main{padding-top:20px}}
+  </style>
+</head>
+<body>
+  <header><a class="wordmark" href="index.html" aria-label="Hermes Drive ホーム">Hermes Drive</a><nav aria-label="主なページ"><a href="index.html">このアプリについて</a><a href="privacy.html" aria-current="page">プライバシーポリシー</a><a href="index.html#terms">利用条件</a></nav></header>
+  <main id="main">
+    <span class="draft">個人用OAuthアプリ · データの取扱方針</span>
+    <h1>プライバシーポリシー</h1>
+    <p class="meta">対象：Hermes Drive ／ 制定日：2026年11月8日</p>
+    <p class="summary">Hermes Driveは、運営者 <a href="https://github.com/tkys2019" rel="noopener noreferrer">tkys2019</a> 自身のGoogle Driveを、ローカルのHermes Agentに接続するための個人用アプリです。この文書は、その連携で扱うデータについて説明します。</p>
+    <section aria-labelledby="access"><h2 id="access">1. 取得する情報と権限</h2><p>Google OAuthを通じて、利用者がアクセスを許可したGoogle Driveの情報を取得します。対象には、ファイル名、識別子、種類、更新日時、フォルダ構造などの情報と、依頼された処理に必要なファイル内容が含まれます。</p><p>Drive全体を扱うため、<code>https://www.googleapis.com/auth/drive</code> の権限を使用します。この権限には閲覧・作成・編集・削除が含まれます。権限があることを理由に、自動で全ファイルを取得したり変更したりすることはありません。</p><p>継続的な接続に必要なOAuthトークンを実行端末に保存します。Googleアカウントのパスワードは本連携では保存しません。</p></section>
+    <section aria-labelledby="purpose"><h2 id="purpose">2. 利用目的</h2><ul><li>利用者が求めたファイルの検索、閲覧、ダウンロード。</li><li>利用者が依頼した内容の整理・要約などの処理。</li><li>利用者が依頼したファイルのアップロード、編集などの操作。</li></ul><p>変更、削除、共有設定の変更は利用者の依頼に基づいて行います。Drive全体の常時同期や一般向けのデータ収集は行いません。</p></section>
+    <section aria-labelledby="external"><h2 id="external">3. 外部サービスでの処理</h2><p>検索結果や、利用者が処理を依頼したファイル内容が、Hermesに設定されたAIプロバイダーや処理サービスへ送信される場合があります。本連携は、あらゆる処理が端末内だけで完結することを保証するものではありません。</p><p>送信先、送信範囲、保存条件は利用するサービスと設定によって異なります。外部へ送る前に、その条件とGoogleユーザーデータの取扱要件への適合を確認します。本連携は、Googleユーザーデータを売却したり、広告配信や汎用AIモデルの学習を目的として利用・提供したりしません。</p><p class="small">この方針だけで外部サービスの設定が変更されるわけではありません。必要な条件を満たせない場合は、そのサービスへ対象データを送信しません。</p><p>本連携がGoogle Workspaceのスコープから受け取る情報の使用および転送は、Limited Use（制限付き使用）の要件を含む<a href="https://developers.google.com/workspace/workspace-api-user-data-developer-policy" rel="noopener noreferrer">Google Workspaceユーザーデータとデベロッパーに関するポリシー</a>に従います。</p></section>
+    <section aria-labelledby="storage"><h2 id="storage">4. 保存と保護</h2><p>OAuth認証情報とダウンロードしたファイルは、Hermesを実行する端末側で管理します。認証情報はアクセスを制限したローカルファイルとして扱い、この公開サイトや公開リポジトリには保存しません。</p><p>取得した情報は、ローカルファイルや会話履歴などに残る場合があります。必要な期間を利用者が管理し、処理に不要となったコピーや履歴を削除します。自動削除が保証されるわけではありません。保持にあたっては、Google APIの適用条件と、外部へ送信した場合の各サービスの保存条件に従います。</p></section>
+    <section aria-labelledby="revoke"><h2 id="revoke">5. アクセスの解除と削除</h2><p><a href="https://myaccount.google.com/connections" rel="noopener noreferrer">Googleアカウントの接続管理</a>からHermes Driveへのアクセス権を取り消せます。取り消すと、以後のGoogle DriveへのAPIアクセスができなくなります。</p><p>アクセス権の取り消しだけでは、すでに取得したローカルファイルや会話履歴は削除されません。不要なコピー、履歴、認証情報は実行端末側で別途削除します。外部サービスに残るデータの削除は、各サービスの手順に従います。</p></section>
+    <section aria-labelledby="website"><h2 id="website">6. この説明サイトについて</h2><p>本サイトは静的な説明ページです。独自のアクセス解析、広告、ログインフォーム、ファイルアップロード機能は設けません。Google DriveのデータやOAuth認証情報を本サイトへ送信する機能はありません。</p><p>このサイトを配信するGitHub Pagesでは、配信・保護のためにGitHubがアクセス情報を処理する場合があります。詳細は<a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement" rel="noopener noreferrer">GitHubのプライバシー声明</a>をご確認ください。</p></section>
+    <section aria-labelledby="contact"><h2 id="contact">7. 運営者・連絡・変更</h2><p>運営者：<a href="https://github.com/tkys2019" rel="noopener noreferrer">tkys2019</a>。連絡が必要な場合は、GoogleのOAuth同意画面に表示されるサポート連絡先を使用してください。公開の場に、認証情報や私的なDriveファイルを投稿しないでください。</p><p>取扱方法に変更がある場合は、このページの内容を更新します。本アプリはGoogleやNous Researchの公式サービスではなく、一般向けの利用登録は受け付けていません。</p></section>
+  </main>
+  <footer><a href="index.html">← Hermes Driveについて</a><p>個人用連携</p></footer>
+</body>
+</html>
